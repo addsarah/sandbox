@@ -1,450 +1,311 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekali Gigit! - Nasi Cokot Modern Ramah Lingkungan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-       
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sekali Gigit! - Nasi Cokot Modern Ramah Lingkungan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
 
-                    <div class="logo-text">Sekali Gigit!</div>
-                </a>
-                
-                <div class="mobile-toggle" id="mobileToggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#about">Tentang Kami</a></li>
-                    <li><a href="#menu">Menu Kami</a></li>
-                    <li><a href="#order">Pesan Sekarang!</a></li>
-                    <li><a href="#gigit-peduli">#GigitPeduliBumi</a></li>
-                </ul>
-            </nav>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <div class="logo-icon text-white d-flex align-items-center justify-content-center">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <span class="logo-text fw-bold fs-4">Sekali Gigit!</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-3 text-center">
+            <li class="nav-item"><a class="nav-link fw-medium" href="#home">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link fw-medium" href="#about">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link fw-medium" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link fw-medium" href="#gigit-peduli">#GigitPeduliBumi</a></li>
+            <li class="nav-item d-none d-lg-block">
+                <a class="btn btn-primary px-4 rounded-pill text-white btn-nav-cta" href="#order">Pesan Sekarang!</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <h1>Sekali Gigit! Nasi Cokot Modern</h1>
-            <p>Nikmati cita rasa nasi cokot autentik dengan sentuhan modern, dikemas secara ramah lingkungan untuk kenyamanan dan kelestarian bumi.</p>
-            <a href="#order" class="cta-button">Pesan Sekarang</a>
+  <section class="hero d-flex align-items-center" id="home">
+    <div class="container text-center text-lg-start pt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-3 fw-bold mb-4">Sekali Gigit!<br><span class="text-white">Nasi Cokot Modern</span></h1>
+          <p class="lead mb-5">Nikmati cita rasa nasi cokot autentik dengan sentuhan modern, dikemas secara ramah lingkungan untuk kenyamanan dan kelestarian bumi.</p>
+          <a href="#menu" class="cta-button text-white">Jelajahi Menu <i class="fas fa-arrow-right ms-2"></i></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Tentang Kami Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">Tentang Kami</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src= "Kilas balik.png" alt="Logo Sekali Gigit" style="width: 100%; border-radius: 10px;">
-                    <section>
-                    
-                   </div>               
-                <div class="about-text">
-                    <h3>Cerita di Balik Setiap Gigitan</h3>
-                    <p>Sekali Gigit! lahir dari kecintaan terhadap kuliner tradisional Indonesia, khususnya nasi cokot yang praktis dan lezat. Kami menghadirkan inovasi dengan kemasan ramah lingkungan dan cita rasa yang disesuaikan dengan selera modern.</p>
-                    <p>Dengan menggunakan bahan-bahan lokal berkualitas dan kemasan yang dapat didaur ulang, kami berkomitmen untuk memberikan pengalaman kuliner yang tidak hanya memuaskan lidah tetapi juga menjaga bumi untuk generasi mendatang.</p>
-                    
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-leaf"></i>
-                            <h4>Ramah Lingkungan</h4>
-                            <p>Kemasan biodegradable dan dapat didaur ulang</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-seedling"></i>
-                            <h4>Bahan Segar</h4>
-                            <p>Bahan pilihan langsung dari petani lokal</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-heart"></i>
-                            <h4>Sehat & Lezat</h4>
-                            <p>Rasa autentik dengan sentuhan modern</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section id="about" class="py-5">
+    <div class="container py-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-image shadow-lg rounded-4 overflow-hidden">
+            <img src="asset/Kilas balik.png" class="img-fluid" alt="Tentang Kami">
+          </div>
         </div>
-    </section>
+        <div class="col-lg-7">
+          <h2 class="section-title text-start mb-4">Tentang Kami</h2>
+          <h3 class="mb-3">Cerita di Balik Setiap Gigitan</h3>
+          <p>Sekali Gigit! lahir dari kecintaan terhadap kuliner tradisional Indonesia, khususnya nasi cokot yang praktis dan lezat. Kami menghadirkan inovasi dengan kemasan ramah lingkungan.</p>
+          
+          <div class="row g-4 mt-4 text-center">
+            <div class="col-md-4">
+              <div class="feature p-3 rounded-3 bg-white shadow-sm h-100">
+                <i class="fas fa-leaf mb-2 fs-3" style="color: var(--success-color);"></i>
+                <h5 class="fw-bold">Eco Friendly</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature p-3 rounded-3 bg-white shadow-sm h-100">
+                <i class="fas fa-seedling mb-2 fs-3" style="color: var(--success-color);"></i>
+                <h5 class="fw-bold">Bahan Segar</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature p-3 rounded-3 bg-white shadow-sm h-100">
+                <i class="fas fa-heart mb-2 fs-3" style="color: var(--success-color);"></i>
+                <h5 class="fw-bold">Cinta Lokal</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Menu Section -->
-    <section id="menu">
-        <div class="container">
-            <h2 class="section-title">Menu Kami</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="asset/Sekali Gigit! Seri Hemat!.png" alt="Sekali Gigit! Seri Hemat" style="width: 100%; max-width: 500px; height: auto; border-radius: 15px; display: block; margin: 0 auto;">
-                    <div class="menu-content">
-                        <h3>Sekali Gigit! Seri Hemat</h3>
-                        <p>"Satu Genggaman, Ledakan Rasa!"</p>
-                        <p>Nikmati perpaduan nasi pulen dan isian melimpah khas Nusantara dalam format praktis. Seri Hemat kami hadir untuk kamu yang ingin makan enak, kenyang, dan tetap ramah di kantong. Sekali Gigit! Langsung Nagih!.</p>
-                        <div class="price">Rp 8.900</div>
-                    </div>
-                </div>
-                
-                <div class="menu-item">
-                    <img src="asset/Sekali Gigit! Seri Juara.png" alt="Sekali Gigit! Seri Juara" style="width: 100%; max-width: 500px; height: auto; border-radius: 15px; display: block; margin: 0 auto;">
-                    <div class="menu-content">
-                    <h3>Sekali Gigit! Seri Juara</h3>
-                        <p>"Berani Terima Tantangan Seri Juara?"</p>
-                        <p>Rasakan ledakan rasa sesungguhnya dengan isian premium yang ekstra pedas dan lezat. Dari Ayam Suwir Mercon, Ayam Kecombrang Wangi hingga Tongkol Suwir Kemangi, setiap gigitan dirancang untuk kamu pecinta pedas sejati. Siapkan dirimu untuk rasa yang meledak di mulut!".</p>
-                        <div class="price">Rp 9.900</div>
-                </div>
-                
-                <div class="menu-item">
-                    <img src= "asset/Sekali Gigit! Seri Premium.jpeg" alt="Sekali Gigit! Seri premium" style="width: 100%; max-width: 500px; height: auto; border-radius: 15px; display: block; margin: 0 auto;">
-                    <div class="menu-content">
-                        <h3>Sekali Gigit! Seri Premium</h3>
-                        <p>"Level Baru Menikmati Nasi Genggam."</p>
-                        <p>Manjakan dirimu dengan Seri Premium yang menghadirkan isian kelas atas dan topping ekslusif, Mulai dari gurihnya Daging Sapi Teriyaki hingga lembutnya Tuna Mayo Melt, setiap gigitan adalah bentuk apresiasi untuk harimu yang produktif.</p>
-                        <div class="price">Rp 11.900</div>
-                    </div>
-                </div>
-                
-                <div class="menu-item">
-                    <img src="asset/Sekali Gigit! Paket Bundling.jpeg" alt="Sekali Gigit! Paket Bundling" style="width: 100%; max-width: 500px; height: auto; border-radius: 15px; display: block; margin: auto;">
-                    <div class="menu-content">
-                        <h3>Sekali Gigit! Paket Bundling</h3>
-                        <p>"Makan Bareng, Jauh Lebih Untung!"</p>
-                        <p>Mau makan enak tapi tetap hemat? Pilih Paket Seru kami! Mulai dari Paket Double untuk berdua, hingga Paket Kantor/Kampus buat ramai-ramai. Lebih banyak jumlahnya, lebih terasa untungnya. Nikmati kelezatan Sekali Gigit! tanpa harus mikir biaya.</p>
-                        <div class="price">Rp 22.000 (Paket Double)</div>
-                        <div class="price">Rp 28.000 (Paket Trio)</div>
-                        <div class="price">Rp 95.000 (Paket Kantor/Kampus)</div>
-                    </div>
-                </div>
+  <section id="menu" class="py-5 bg-light">
+    <div class="container py-lg-5">
+      <h2 class="section-title mb-5 text-center">Menu Kami</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm menu-item">
+            <img src="asset/Sekali Gigit! Seri Hemat!.png" class="card-img-top p-2 rounded-4" alt="Seri Hemat">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Seri Hemat</h5>
+              <p class="card-text small">Satu genggaman ledakan rasa Nusantara yang ramah di kantong.</p>
+              <div class="price fw-bold fs-5">Rp 8.900</div>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm menu-item">
+            <img src="asset/Sekali Gigit! Seri Juara.png" class="card-img-top p-2 rounded-4" alt="Seri Juara">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Seri Juara</h5>
+              <p class="card-text small">Ekstra pedas! Ayam Suwir Mercon & Tongkol Kemangi.</p>
+              <div class="price fw-bold fs-5">Rp 9.900</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm menu-item">
+            <img src="asset/Sekali Gigit! Seri Premium.jpeg" class="card-img-top p-2 rounded-4" alt="Seri Premium">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Seri Premium</h5>
+              <p class="card-text small">Daging Sapi Teriyaki & Tuna Mayo Melt eksklusif.</p>
+              <div class="price fw-bold fs-5">Rp 11.900</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm menu-item">
+            <img src="asset/Sekali Gigit! Paket Bundling.jpeg" class="card-img-top p-2 rounded-4" alt="Paket Bundling">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Paket Bundling</h5>
+              <p class="card-text small">Makan bareng teman kantor/kampus jauh lebih hemat!</p>
+              <div class="price fw-bold fs-5">Mulai Rp 22rb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Order Section -->
-    <section id="order" class="order-section">
-        <div class="container">
-            <h2 class="section-title">Pesan Sekarang!</h2>
-            <div class="order-container">
-                <div class="order-steps">
-                    <h3>Cara Memesan</h3>
-                    
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div>
-                            <h4>Pilih Menu</h4>
-                            <p>Pilih menu favoritmu dari berbagai pilihan nasi cokot yang tersedia.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div>
-                            <h4>Isi Form Pemesanan</h4>
-                            <p>Isi data diri dan alamat pengiriman dengan lengkap.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div>
-                            <h4>Pilih Metode Pembayaran</h4>
-                            <p>Bayar melalui transfer bank, e-wallet, atau cash on delivery.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <div>
-                            <h4>Pesanan Dikirim</h4>
-                            <p>Pesananmu akan dikirim dengan kemasan ramah lingkungan.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="order-form">
-                    <h3>Form Pemesanan</h3>
-                    <form id="orderForm">
-                        <div class="form-group">
-                            <label for="name">Nama Lengkap</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Nomor Telepon</label>
-                            <input type="tel" id="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="address">Alamat Pengiriman</label>
-                            <textarea id="address" rows="3" required></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="menu">Pilih Menu</label>
-                            <select id="menu" required>
-                                <option value="">-- Pilih Menu --</option>
-                                <option value="seri-hemat">Sekali Gigit!(Seri Hemat) = Telur Dadar Suwir Pedas - Rp 8.900</option>
-                                <option value="seri-hemat">Sekali Gigit! (Seri Hemat) = Orak-Arik Tempe Teri - Rp 8.900</option>
-                                <option value="seri-hemat">Sekali Gigit! (Seri Hemat) = Jamur Balado - Rp 8.900</option>
-                                <option value="seri-juara">Sekali Gigit! (Seri Juara) = Ayam Suwir Mercon - Rp 9.900</option>
-                                <option value="seri-juara">Sekali Gigit! (Seri Juara) = Ayam Kecombrang Wangi - Rp 9.900</option>
-                                <option value="seri-juara">Sekali Gigit! (Seri Juara) = Tongkol Suwir Kemangi - Rp 9.900</option>
-                                <option value="seri-premium">Sekali Gigit! (Seri Premium) = Daging Sapi Teriyaki - Rp 11.900</option>
-                                <option value="seri-premium">Sekali Gigit! (Seri Premium) =  Tuna Mayo Melt - Rp 11.900</option>
-                                <option value="paket-bundling">Sekali Gigit! Paket Double (2 Seri Juara + 1 Air Mineral) - Rp 22.000</option>
-                                <option value="paket-bundling">Sekali Gigit! Paket Trio (Bebas Pilih Varian Apa Saja) - Rp 28.000</option>
-                                <option value="paket-bundling">Sekali Gigit! Paket Kantor/Kampus (Mix All Varian/10 Porsi) - Rp 95.000</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="quantity">Jumlah Pesanan</label>
-                            <input type="number" id="quantity" min="1" value="1" required>
-                            
-                        <label for="detail pesanan">Detail Pesanan</label>
-                            <input type="text" id="detail pesanan" required>
-                        
-                        <div class="form-group">
-                            <label for="payment">Metode Pembayaran</label>
-                            <select id="payment" required>
-                                <option value="">-- Pilih Pembayaran --</option>
-                                <option value="transfer">Transfer Bank</option>
-                                <option value="e-wallet">E-Wallet (OVO/Gopay/Dana)</option>
-                                <option value="cod">Cash on Delivery (COD)</option>
-                            </select>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Pesan Sekarang!</button>
-                    </form>
-                </div>
-            </div>
+  <section id="order" class="py-5">
+    <div class="container py-lg-5">
+      <h2 class="section-title text-center mb-5">Pesan Sekarang!</h2>
+      <div class="order-container row shadow-lg rounded-4 bg-white overflow-hidden g-0">
+        <div class="col-lg-4 bg-light p-4 p-lg-5">
+          <h3 class="mb-4">Cara Memesan</h3>
+          <div class="step d-flex mb-4">
+            <div class="step-number me-3">1</div>
+            <div><h5 class="fw-bold mb-0">Isi Formulir</h5><p class="small mb-0">Lengkapi data diri dan pesanan pada form di samping.</p></div>
+          </div>
+          <div class="step d-flex mb-4">
+            <div class="step-number me-3">2</div>
+            <div><h5 class="fw-bold mb-0">Konfirmasi</h5><p class="small mb-0">Tim kami akan menghubungi Anda via WhatsApp setelah data masuk.</p></div>
+          </div>
+          <div class="step d-flex mb-4">
+            <div class="step-number me-3">3</div>
+            <div><h5 class="fw-bold mb-0">Pembayaran</h5><p class="small mb-0">Lakukan pembayaran via Transfer atau COD.</p></div>
+          </div>
+          <div class="step d-flex">
+            <div class="step-number me-3">4</div>
+            <div><h5 class="fw-bold mb-0">Kirim</h5><p class="small mb-0">Duduk manis, pesanan segera meluncur!</p></div>
+          </div>
+          
+          <div class="alert alert-info mt-5 small shadow-sm" role="alert">
+            <i class="fas fa-info-circle me-2"></i> Pastikan klik tombol <strong>Kirim/Submit</strong> di bagian bawah formulir.
+          </div>
         </div>
-    </section>
 
-    <!-- Gigit Peduli Bumi Section -->
-    <section id="gigit-peduli" class="gigit-peduli">
-        <div class="container">
-            <h2 class="section-title">#GigitPeduliBumi</h2>
-            <div class="eco-education">
-                <p>Kami percaya bahwa setiap gigitan bisa memberikan dampak positif bagi lingkungan. Melalui gerakan #GigitPeduliBumi, kami berkomitmen untuk mengurangi limbah plastik dan mendukung petani lokal.</p>
-                
-                <div class="eco-tabs">
-                    <div class="eco-tab active" data-tab="kemasan">Kemasan Ramah Lingkungan</div>
-                    <div class="eco-tab" data-tab="daur-ulang">Program Daur Ulang</div>
-                    <div class="eco-tab" data-tab="petani">Dukung Petani Lokal</div>
-                </div>
-                
-                <div class="eco-content active" id="kemasan-content">
-                    <h3>Kemasan yang Bisa Terurai</h3>
-                    <p>Kami menggunakan kemasan berbahan dasar pati jagung dan kertas daur ulang yang dapat terurai secara alami dalam waktu 3-6 bulan, berbeda dengan plastik yang membutuhkan ratusan tahun.</p>
-                    <p>Setiap logo kemasan juga dicetak dengan menggunakan tinta dari kacang kedelai, sehingga setiap pembelian memberikan rasa aman.</p>
-                </div>
-                
-                <div class="eco-content" id="daur-ulang-content">
-                    <h3>Program "Kembalikan Kemasan"</h3>
-                    <p>Kami memiliki program khusus di mana pelanggan bisa mengembalikan kemasan bekas ke outlet kami. Untuk setiap 10 kemasan yang dikembalikan, pelanggan mendapatkan 1 porsi nasi cokot gratis!</p>
-                    <p>Kemasan yang dikembalikan akan kami proses menjadi kompos atau didaur ulang menjadi produk baru.</p>
-                </div>
-                
-                <div class="eco-content" id="petani-content">
-                    <h3>Bersama Petani Lokal</h3>
-                    <p>Kami bekerja sama dengan petani lokal untuk menyediakan bahan-bahan segar seperti beras, sayuran, dan rempah-rempah. Dengan ini, kami turut mendukung perekonomian lokal dan mengurangi jejak karbon dari transportasi bahan makanan jarak jauh.</p>
-                    <p>Sebagian keuntungan dari setiap pembelian juga kami salurkan untuk program pelatihan pertanian organik bagi petani lokal.</p>
-                </div>
-            </div>
-            
-            <div class="eco-stats">
-                <div class="stat">
-                    <div class="stat-number" id="plastic-saved">12.540</div>
-                    <p>Kemasan Plastik Berkurang</p>
-                </div>
-                <div class="stat">
-                    <div class="stat-number" id="trees-planted">856</div>
-                    <p>Bibit Tanaman Ditanam</p>
-                </div>
-                <div class="stat">
-                    <div class="stat-number" id="farmers-supported">127</div>
-                    <p>Petani Didukung</p>
-                </div>
-            </div>
+        <div class="col-lg-8 p-0 google-form-wrapper">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdr1pi0nUStXb9oyurrcZdExIv-kQAGNGHc7Q5FEQbJYvyYtw/viewform?usp=dialog=1&embedded=true" 
+            width="100%" 
+            height="800" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            Memuat formulir…
+          </iframe>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Sekali Gigit!</h3>
-                    <p>Nasi cokot modern dengan kemasan ramah lingkungan untuk pengalaman kuliner yang bertanggung jawab.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Kontak Kami</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia.</p>
-                    <p><i class="fas fa-phone"></i> +62 857-1137-3267</p>
-                    <p><i class="fas fa-envelope"></i> halo@sekaligigit.com</p>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Jam Operasional</h3>
-                    <p>Senin - Jumat: 07.00 - 19.00</p>
-                    <p>Sabtu - Minggu: 09.00 - 19.00</p>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Link Cepat</h3>
-                    <a href="#about">Tentang Kami</a>
-                    <a href="#menu">Menu Kami</a>
-                    <a href="#order">Pesan Sekarang!</a>
-                    <a href="#gigit-peduli-bumi">#GigitPeduliBumi</a>
-                </div>
+  <section id="gigit-peduli" class="py-5 gigit-peduli text-white mx-lg-4 rounded-5 my-5">
+    <div class="container py-lg-5">
+      <h2 class="section-title text-center text-white mb-5">#GigitPeduliBumi</h2>
+      <div class="row g-4">
+        <div class="col-lg-8 mx-auto">
+          <div class="eco-education p-4 shadow">
+            <ul class="nav nav-pills mb-4 justify-content-center gap-2" id="ecoTabs">
+              <li class="nav-item"><button class="nav-link active rounded-pill px-4" data-bs-toggle="tab" data-bs-target="#tab1">Kemasan</button></li>
+              <li class="nav-item"><button class="nav-link rounded-pill px-4" data-bs-toggle="tab" data-bs-target="#tab2">Daur Ulang</button></li>
+              <li class="nav-item"><button class="nav-link rounded-pill px-4" data-bs-toggle="tab" data-bs-target="#tab3">Petani Lokal</button></li>
+            </ul>
+            <div class="tab-content text-center py-3">
+              <div class="tab-pane fade show active" id="tab1">
+                <h4>Kemasan yang Bisa Terurai</h4>
+                <p>Menggunakan pati jagung dan kertas daur ulang yang terurai dalam 3-6 bulan.</p>
+              </div>
+              <div class="tab-pane fade" id="tab2">
+                <h4>Program Kembalikan Kemasan</h4>
+                <p>Kumpulkan 10 kemasan bekas dan dapatkan 1 porsi gratis!</p>
+              </div>
+              <div class="tab-pane fade" id="tab3">
+                <h4>Bersama Petani Lokal</h4>
+                <p>Bahan segar dari petani sekitar untuk mengurangi jejak karbon transportasi.</p>
+              </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2025 Sekali Gigit! Nasi Cokot Modern. Semua hak dilindungi.</p>
+          </div>
+          
+          <div class="row mt-5 g-4 text-center stats-row">
+            <div class="col-4">
+              <h2 class="fw-bold" id="plastic-saved">0</h2>
+              <p class="small m-0">Plastik Berkurang</p>
             </div>
+            <div class="col-4">
+              <h2 class="fw-bold" id="trees-planted">0</h2>
+              <p class="small m-0">Pohon Ditanam</p>
+            </div>
+            <div class="col-4">
+              <h2 class="fw-bold" id="farmers-supported">0</h2>
+              <p class="small m-0">Petani Terbantu</p>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script>
-        const scriptURL = "https://script.google.com/macros/s/AKfycbxK2MpGqYLxu5Kzmzd5wPfyNAqlMoh7BwIQG-0a-CvxmTeL0x7fr4AAHW02zcBSMVAD/exec";
-        const form = document.getElementById("contactForm");
-        const statusMsg = document.getElementById("statusMsg");
-        form.addEventListener("submit", e => {
-        e.preventDefault();
-        statusMsg.innerHTML = "Mengirim pesan...";
-        fetch(scriptURL, {
-        method: "POST",
-        body: new FormData(form)
-        })
-        .then(response => {
-        statusMsg.innerHTML = "Pesan berhasil dikirim ";
-        form.reset();
-        })
-        .catch(error => {
-        statusMsg.innerHTML = "Terjadi kesalahan ";
-        console.error(error);
-        });
-        });
-        </script>
-    <script>
-        // Mobile Navigation Toggle
-        document.getElementById('mobileToggle').addEventListener('click', function() {
-            document.getElementById('navLinks').classList.toggle('active');
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Close mobile menu if open
-                document.getElementById('navLinks').classList.remove('active');
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Eco Tabs Functionality
-        const ecoTabs = document.querySelectorAll('.eco-tab');
-        const ecoContents = document.querySelectorAll('.eco-content');
-        
-        ecoTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active class from all tabs and contents
-                ecoTabs.forEach(t => t.classList.remove('active'));
-                ecoContents.forEach(c => c.classList.remove('active'));
-                
-                // Add active class to clicked tab
-                tab.classList.add('active');
-                
-                // Show corresponding content
-                const tabId = tab.getAttribute('data-tab');
-                document.getElementById(`${tabId}-content`).classList.add('active');
-            });
-        });
-        
-        // Form Submission
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const menu = document.getElementById('menu').options[document.getElementById('menu').selectedIndex].text;
-            
-            // Show success message
-            alert(`Terima kasih ${name}! Pesanan ${menu} Anda telah berhasil direkam. Tim kami akan menghubungi Anda dalam waktu 1x24 jam untuk konfirmasi.`);
-            
-            // Reset form
-            this.reset();
-        });
-        
-        // Animated Statistics Counter
-        function animateCounter(elementId, finalValue, duration = 2000) {
-            let element = document.getElementById(elementId);
-            let startValue = 0;
-            let increment = finalValue / (duration / 16); // 60fps
-            let current = 0;
-            
-            function updateCounter() {
-                current += increment;
-                if(current < finalValue) {
-                    element.textContent = Math.floor(current).toLocaleString();
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    element.textContent = finalValue.toLocaleString();
-                }
-            }
-            
-            // Start animation when element is in viewport
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if(entry.isIntersecting) {
-                        updateCounter();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-            
-            observer.observe(element);
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h3 class="fw-bold">Sekali Gigit!</h3>
+          <p>Nasi cokot modern dengan kemasan ramah lingkungan untuk pengalaman kuliner yang bertanggung jawab.</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 px-lg-5">
+          <h5 class="fw-bold mb-4">Kontak Kami</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Jakarta, Indonesia</p>
+          <p><i class="fas fa-phone me-2"></i> +62 857-1137-3267</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <h5 class="fw-bold mb-4">Operasional</h5>
+          <p class="mb-1">Senin - Jumat: 07.00 - 19.00</p>
+          <p>Sabtu - Minggu: 09.00 - 19.00</p>
+        </div>
+      </div>
+      <div class="border-top mt-5 pt-4 text-center">
+        <p class="small m-0 text-white-50">&copy; 2025 Sekali Gigit! Nasi Cokot Modern. Semua hak dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Stats Counter Animation
+    function animateCounter(id, target) {
+      let count = 0;
+      let duration = 2000;
+      let increment = target / (duration / 16);
+      let element = document.getElementById(id);
+      
+      let timer = setInterval(() => {
+        count += increment;
+        if (count >= target) {
+          element.innerText = target.toLocaleString();
+          clearInterval(timer);
+        } else {
+          element.innerText = Math.floor(count).toLocaleString();
         }
-        
-        // Initialize counters when page loads
-        window.addEventListener('load', () => {
-            animateCounter('plastic-saved', 12540);
-            animateCounter('trees-planted', 856);
-            animateCounter('farmers-supported', 127);
-        });
-    </script>
+      }, 16);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          animateCounter('plastic-saved', 12540);
+          animateCounter('trees-planted', 856);
+          animateCounter('farmers-supported', 127);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.5});
+    
+    observer.observe(document.querySelector('.gigit-peduli'));
+
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
