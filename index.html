@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekali Gigit! - Nasi Cokot Modern Ramah Lingkungan</title>
 
-    <link rel="icon" href="asset/logo-1.jpeg" type="image/png">
+    <link rel="icon" href="asset/logo-1.jpeg" type="image/jpeg">
     <link rel="apple-touch-icon" href="asset/logo-1.jpeg">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
                         <li class="nav-item"><a class="nav-link fw-medium" href="#menu">Menu</a></li>
                         <li class="nav-item"><a class="nav-link fw-medium" href="#gigit-peduli">#GigitPeduliBumi</a></li>
                         <li class="nav-item ms-lg-2">
-                            <a class="btn btn-primary px-4 rounded-pill text-white btn-nav-cta border-0" href="#order" style="background-color: #9C6F44;">Pesan Sekarang!</a>
+                            <a class="btn btn-primary px-4 rounded-pill text-white border-0 shadow-sm" href="#order" style="background-color: #9C6F44;">Pesan Sekarang!</a>
                         </li>
                     </ul>
                 </div>
@@ -48,25 +48,25 @@
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <h1 class="display-3 fw-bold mb-4">Sekali Gigit!<br><span class="text-white">Nasi Cokot Modern</span></h1>
-                    <p class="lead mb-5 text-light">Cita rasa autentik dengan sentuhan modern, dikemas ramah lingkungan untuk bumi yang lebih hijau.</p>
+                    <p class="lead mb-5 text-light opacity-90">Cita rasa autentik dengan sentuhan modern, dikemas ramah lingkungan untuk bumi yang lebih hijau.</p>
                     <a href="#menu" class="cta-button">Jelajahi Menu <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-5 bg-white">
+    <section id="about" class="py-5 bg-white border-bottom">
         <div class="container py-lg-5">
             <div class="row align-items-center g-5">
-                <div class="col-lg-5">
-                    <div class="about-image shadow-lg rounded-4 overflow-hidden">
-                        <img src="asset/Kilas balik.png" class="img-fluid w-100" alt="Tentang Kami">
+                <div class="col-lg-5 text-center text-lg-start">
+                    <div class="about-image shadow-lg rounded-4 overflow-hidden d-inline-block">
+                        <img src="asset/Kilas balik.png" class="img-fluid" alt="Tentang Kami" style="max-width: 450px;">
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <h2 class="section-title text-start mb-4">Tentang Kami</h2>
                     <h3 class="mb-3">Cerita di Balik Setiap Gigitan</h3>
-                    <p>Sekali Gigit! lahir dari kecintaan kuliner tradisional, menghadirkan nasi cokot praktis dengan standar kualitas modern tanpa sampah plastik berlebih.</p>
+                    <p>Sekali Gigit! lahir dari kecintaan kuliner tradisional, menghadirkan nasi cokot praktis dengan standar kualitas modern tanpa meninggalkan jejak sampah plastik berlebih.</p>
                 </div>
             </div>
         </div>
@@ -116,30 +116,91 @@
         </div>
     </section>
 
-    <section id="order" class="py-5 bg-white">
-        <div class="container py-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 shadow-lg p-4 p-lg-5 rounded-4 bg-white border">
-                    <h2 class="text-center mb-4">Tinggalkan Pesan</h2>
+    <section id="order" class="py-5">
+        <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="card-header bg-white border-0 pt-4 text-center">
+                        <img src="asset/logo-2.jpeg" alt="Logo" height="70" class="mb-3">
+                        <h2 class="fw-bold text-brown">Form Pemesanan Sekali Gigit</h2>
+                        <p class="text-muted small">* Menunjukkan pertanyaan yang wajib diisi</p>
+                    </div>
                     
-                    <form id="contactForm">
-                        <input type="text" name="nama" placeholder="Nama Lengkap" required>
-                        <input type="email" name="email" placeholder="Alamat Email" required>
-                        <input type="tel" name="telepon" placeholder="Nomor yang Dapat Dihubungi" required>
-                        <textarea name="pesan" placeholder="Tulis pesan Anda..." required></textarea>
-                        <button type="submit">Kirim Pesan</button>
-                    </form>
+                    <div class="card-body p-4 p-lg-5">
+                        <form id="contactForm">
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Nama *</label>
+                                <input type="text" name="nama" class="form-control" placeholder="Jawaban Anda" required>
+                            </div>
 
-                    <p id="statusMsg" class="text-center mt-3"></p>
-                    <hr style="margin:30px 0;">
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Nomor Telepon *</label>
+                                <input type="telepon" name="telepon" class="form-control" placeholder="Jawaban Anda" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Alamat Pengiriman *</label>
+                                <textarea name="alamat" class="form-control" placeholder="Jawaban Anda" rows="3" required></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Pilihan Paket *</label>
+                                <select name="paket" class="form-select" required>
+                                    <option value="" disabled selected>Pilih paket...</option>
+                                    <option value="Hemat - Telur Dadar">Sekali Gigit!(Seri Hemat) = Telur Dadar Suwir Pedas - Rp 8.900</option>
+                                    <option value="Hemat - Tempe Teri">Sekali Gigit! (Seri Hemat) = Orak-Arik Tempe Teri - Rp 8.900</option>
+                                    <option value="Hemat - Jamur Balado">Sekali Gigit! (Seri Hemat) = Jamur Balado - Rp 8.900</option>
+                                    <option value="Juara - Ayam Mercon">Sekali Gigit! (Seri Juara) = Ayam Suwir Mercon - Rp 9.900</option>
+                                    <option value="Juara - Ayam Kecombrang">Sekali Gigit! (Seri Juara) = Ayam Kecombrang Wangi - Rp 9.900</option>
+                                    <option value="Juara - Tongkol Kemangi">Sekali Gigit! (Seri Juara) = Tongkol Suwir Kemangi - Rp 9.900</option>
+                                    <option value="Premium - Sapi Teriyaki">Sekali Gigit! (Seri Premium) = Daging Sapi Teriyaki - Rp 11.900</option>
+                                    <option value="Premium - Tuna Mayo">Sekali Gigit! (Seri Premium) = Tuna Mayo Melt - Rp 11.900</option>
+                                    <option value="Paket Double">Sekali Gigit! Paket Double (2 Seri Juara + 1 Air Mineral) - Rp 22.000</option>
+                                    <option value="Paket Trio">Sekali Gigit! Paket Trio (Bebas Pilih Varian Apa Saja) - Rp 28.000</option>
+                                    <option value="Paket Kantor">Sekali Gigit! Paket Kantor/Kampus (Mix All Varian/10 Porsi) - Rp 95.000</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Jumlah Pesanan *</label>
+                                <input type="number" name="jumlah" class="form-control" min="1" placeholder="Jawaban Anda" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Detail Pesanan *</label>
+                                <textarea name="detail" class="form-control" placeholder="Contoh: Tanpa sambal, atau rincian varian paket trio" rows="2" required></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Metode Pembayaran *</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pembayaran" value="Transfer Bank" required>
+                                    <label class="form-check-label">Transfer Bank</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pembayaran" value="E-Wallet">
+                                    <label class="form-check-label">E-Wallet (OVO/Gopay/Dana)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pembayaran" value="COD">
+                                    <label class="form-check-label">Cash On Delivery (COD)</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100 py-3 fw-bold rounded-3 mt-2">Kirim Pesan</button>
+                        </form>
+                        <p id="statusMsg" class="text-center mt-3"></p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
-            <img src="asset/logo-1.jpeg" alt="Logo" height="60">
+            <img src="asset/logo-1.jpeg" alt="Logo" height="60" class="mb-3">
             <p class="small opacity-50">&copy; 2025 Sekali Gigit!. All rights reserved.</p>
         </div>
     </footer>
@@ -147,25 +208,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzOPwb7IM9om3aJ-7Q842c-r-YJ2vPGu_WenJMia029z-Cuptj0rj8Lx97qCcgoR0inTA/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw0CIW1GGwARYjrtDlZX5uc27Lkke75FMKatU5avLyEyuPvRtTfcsZyIAijesYF4-QL2A/exec";
       const form = document.getElementById("contactForm");
       const statusMsg = document.getElementById("statusMsg");
 
       form.addEventListener("submit", e => {
         e.preventDefault();
-        statusMsg.innerHTML = "Mengirim pesan...";
+        statusMsg.innerHTML = "<span class='text-muted'>Sedang mengirim pesanan...</span>";
 
         fetch(scriptURL, {
             method: "POST",
             body: new FormData(form)
         })
         .then(response => {
-            statusMsg.innerHTML = "Pesan berhasil dikirim ✅";
+            statusMsg.innerHTML = "<span class='text-success fw-bold'>Pesan berhasil dikirim ✅</span>";
             form.reset();
         })
         .catch(error => {
-            statusMsg.innerHTML = "Terjadi kesalahan ❌";
-            console.error(error);
+            statusMsg.innerHTML = "<span class='text-danger fw-bold'>Terjadi kesalahan ❌</span>";
+            console.error('Error!', error.message);
         });
       });
     </script>

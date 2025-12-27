@@ -9,10 +9,15 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #3C2A21;
-    overflow-x: hidden;
+    background-color: #f8f9fa;
+    color: #333;
 }
+
+.text-brown {
+    color: #6B4226;
+}
+
+
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
@@ -50,12 +55,12 @@ h1, h2, h3 {
 }
 .cta-button:hover { background: transparent; color: white; }
 
-/* FORM STYLING [cite: 2, 3, 4, 131-162] */
+/* FORM STYLING*/
 form {
   margin-top: 20px;
 }
 
-form input, form textarea {
+form input, form textarea, form select {
   width: 100%;
   padding: 12px;
   margin-top: 10px;
@@ -66,7 +71,7 @@ form input, form textarea {
 
 form textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 form button {
@@ -78,8 +83,6 @@ form button {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s;
 }
 
 form button:hover {
@@ -95,13 +98,13 @@ form button:hover {
 .menu-item { border-radius: 20px !important; transition: var(--transition); overflow: hidden; }
 .menu-item img { height: 200px; object-fit: cover; }
 .text-brown { color: var(--primary-medium); }
-.filter-white { filter: brightness(0) invert(1); }
 
 /* SECTION TITLES */
-.section-title { position: relative; padding-bottom: 15px; }
+.section-title { position: relative; padding-bottom: 15px; text-align: center; }
 .section-title::after {
     content: ''; position: absolute; width: 60px; height: 4px;
     background: var(--primary-light); bottom: 0; left: 50%;
     transform: translateX(-50%); border-radius: 2px;
 }
+.section-title.text-start { text-align: left; }
 .section-title.text-start::after { left: 0; transform: none; }
